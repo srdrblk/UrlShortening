@@ -83,7 +83,7 @@ namespace Core.Context
             else
             {
                 newKey[index] = RandomlySortedUrlCharacters[0]; //reset char with "r" ; "r" is our first char in RandomlySortedUrlCharacters
-                newKey = new StringBuilder(CheckKey(key, index - 1));
+                newKey = new StringBuilder(CheckKey(newKey.ToString(), index - 1));
             }
             if (IsKeyExist(newKey.ToString()))
             {

@@ -60,7 +60,7 @@ namespace Service.Service
                     return new BaseResponse<GetUrlDto>(MessagesResource.AllCombinationsUsed);
                 }
                 var shortenedUrl = context.AddShortUrl(key, originalUrl);
-                return new BaseResponse<GetUrlDto>() { Data = new GetUrlDto(shortenedUrl) };
+                return new BaseResponse<GetUrlDto>(new GetUrlDto(shortenedUrl));
             }
             if (createUrl.CustomKey.Length > appSettings.MaxCodeLength)
             {
@@ -73,13 +73,13 @@ namespace Service.Service
             }
             if (!context.IsKeyValid(createUrl.CustomKey))
             {
-                return new BaseResponse<GetUrlDto>(new GetUrlDto(), MessagesResource.CodeInvalid);
+                return new BaseResponse<GetUrlDto>(MessagesResource.CodeInvalid);
             }
             else
             {
                 originalUrl.SetIsCustom(true);
                 var shortenedUrl = context.AddShortUrl(createUrl.CustomKey, originalUrl);
-                return new BaseResponse<GetUrlDto>() { Data = new GetUrlDto(shortenedUrl) };
+                return new BaseResponse<GetUrlDto>(new GetUrlDto(shortenedUrl));
             }
         }
         private bool IsURLValid(string url)

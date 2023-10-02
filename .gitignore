@@ -13,3 +13,5 @@
 /src/Layers/Domain/obj
 /src/Layers/Resources/bin/Debug/net7.0
 /src/Layers/Resources/obj
+/tests/BusinessTest/bin/Debug/net7.0
+/tests/BusinessTest/obj
