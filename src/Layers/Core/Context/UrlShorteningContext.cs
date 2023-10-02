@@ -95,6 +95,17 @@ namespace Core.Context
         {
             return UrlCollection.ContainsKey(key);
         }
+        public bool IsKeyValid(string key)
+        {
+            foreach (var ch in key)
+            {
+                if (!RandomlySortedUrlCharacters.Contains(ch))
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
         public bool IsUrlExist(string url)
         {
             return UrlCollection.Any(uc => uc.Value.GetUrl() == url);

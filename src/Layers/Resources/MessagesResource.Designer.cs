@@ -70,6 +70,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The code contains invalid characters!.
+        /// </summary>
+        public static string CodeInvalid {
+            get {
+                return ResourceManager.GetString("CodeInvalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Custom code should not be longer than {0}.
         /// </summary>
         public static string CodeLengthExceed {

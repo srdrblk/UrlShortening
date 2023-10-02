@@ -2,8 +2,11 @@
 {
     public class GetUrlDto
     {
-        public  string Url { get; set; }
+        public string? Url { get; set; }
+        public GetUrlDto()
+        {
 
+        }
         public GetUrlDto(string url)
         {
             Url = url;

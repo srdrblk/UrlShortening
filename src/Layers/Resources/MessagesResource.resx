@@ -120,6 +120,9 @@
   <data name="AllCombinationsUsed" xml:space="preserve">
     <value>All combinations used</value>
   </data>
+  <data name="CodeInvalid" xml:space="preserve">
+    <value>The code contains invalid characters!</value>
+  </data>
   <data name="CodeLengthExceed" xml:space="preserve">
     <value>Custom code should not be longer than {0}</value>
   </data>
