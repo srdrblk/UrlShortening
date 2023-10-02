@@ -1,0 +1,15 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/src/Apps/UrlShortening/bin/Debug/net7.0
+/src/Apps/UrlShortening/obj
+/src/Layers/Business/bin/Debug/net7.0
+/src/Layers/Business/obj
+/src/Layers/Core/bin/Debug/net7.0
+/src/Layers/Core/obj
+/src/Layers/Domain/bin/Debug/net7.0
+/src/Layers/Domain/obj
+/src/Layers/Resources/bin/Debug/net7.0
+/src/Layers/Resources/obj
